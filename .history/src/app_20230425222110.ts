@@ -10,9 +10,7 @@ app.use(express.json());
 
 app.use('/todo', todoRouter);
 app.use('/auth', authRouter);
-app.use("/",(req, res)=>{
-  res.send('server home page')
-} )
+app.use("/",(req, res) )
 
 databseInit();
 
